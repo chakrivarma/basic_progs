@@ -2,7 +2,6 @@ package tests.basictest1;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.notification.Failure;
 
-import basictest.TestCase;
 
 import org.junit.runner.Result;
 public class TestRunner {

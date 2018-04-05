@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean id="addressBean" class="spring.core.dependencyinjection.constructorinjection.Address">
+	<constructor-arg value="502" type="int"></constructor-arg>
+	<constructor-arg value="surya nagar"></constructor-arg>
+	<constructor-arg value="anekal road,chandapura"></constructor-arg>
+	<constructor-arg value="bangalore"></constructor-arg>
+</bean>
+<bean id="departmentBean" class="spring.core.dependencyinjection.setterinjection.Department">
+	<property name="name" value="InformationTechnology"></property>
+</bean>
+<bean id="employeeBeanSI" class="spring.core.dependencyinjection.constructorinjection.objectinjection.Employee">
+	<property name="name" value="Chaitanya Varma"></property>
+	<property name="empCode" value="AC017"></property>
+	<property name="address" ref="addressBean"></property>
+	<property name="department" ref="departmentBean"></property>
+</bean>
+<bean id="employeeBeanCI" class="spring.core.dependencyinjection.constructorinjection.objectinjection.Employee">
+	<constructor-arg  value="Chaitanya Varma"></constructor-arg>
+	<constructor-arg value="AC017"></constructor-arg>	
+	<constructor-arg ref="addressBean"></constructor-arg>
+	<constructor-arg  ref="departmentBean"></constructor-arg>
+</bean>
+</beans>
