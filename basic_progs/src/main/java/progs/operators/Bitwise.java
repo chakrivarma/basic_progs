@@ -1,7 +1,10 @@
 package progs.operators;
 
 public class Bitwise {
-	static int a=42,b=14,c=1,d=6__4;
+	/**
+	 * 
+	 */
+	static int a=1001,b=43,c=1,d=6__4;
 	int x,y,z=10;
 	public Bitwise(int a, int b, int c, int d) {
 		this.a=a;
