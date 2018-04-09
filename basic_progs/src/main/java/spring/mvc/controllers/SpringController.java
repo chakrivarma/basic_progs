@@ -6,9 +6,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class SpringController {
-	@RequestMapping("/page1.jsp")
+	@RequestMapping("/page1")
 	public ModelAndView getForm() {
-		return new ModelAndView("WEB-INF/jsp/page1");
+		return new ModelAndView("page1");
 	}
 
 }
