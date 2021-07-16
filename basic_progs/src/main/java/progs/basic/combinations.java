@@ -6,7 +6,7 @@ public class combinations {
 	public static void main(String... args) {
 		try {
 			String str="";
-			System.out.println("Please enter a string to print combination");
+			System.out.println("Please enter a string to print combinations");
 			Scanner sc=new Scanner(System.in);
 			
 			BufferedReader br=new BufferedReader(new InputStreamReader(System.in));

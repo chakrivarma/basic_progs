@@ -9,7 +9,7 @@ public class Factorial {
 		System.out.println("Enter a number");
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int num=Integer.parseInt(br.readLine());
-		int res=1;
+		int res=2;
 		while(num>0) {
 			res=res*num--;
 		}
